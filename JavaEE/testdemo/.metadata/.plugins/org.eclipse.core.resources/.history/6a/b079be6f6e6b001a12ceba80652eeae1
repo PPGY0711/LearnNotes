@@ -1,0 +1,32 @@
+package day12;
+
+import java.io.File;
+
+public class Test {
+	public static void main(String[] args) {
+		File f = new File("D:\\Documents\\Java\\notes\\testFile\\tt.txt");//这个f对象就是tt.txt
+//		File f1 = new File("D:\\Documents\\Java","notes\\testFile\\tt.txt");//这个f1对象也是tt.txt
+//		//第二种使用的相对少一些
+		//注意，\在文件中是路径的分隔符，但是在java编程中一个\是转义符，在java中\\或者/才是文件的分隔符
+		//UNIX中用/，windows中用\\，可以用File.separator代替
+		System.out.println(f.getName());//获取文件名或文件夹名称
+		System.out.println(f.getPath());//获取文件路径或者文件夹路径，是在new的时候的路径
+		System.out.println(f.getAbsolutePath());
+		File f2 = new File("D:\\Documents\\Java","notes\\testFile");
+		System.out.println(f2.getName());
+		
+		File f3 = new File("src/day11/Test.java");
+		System.out.println(f3.getPath());
+		System.out.println(f3.getAbsolutePath());//当前文件的绝对路径
+		
+		System.out.println(f3);
+		System.out.println(f3.getAbsoluteFile());//返回一个用当前文件的绝对路径构建的File对象
+		
+		System.out.println(f3.getParent());//返回当前文件或者文件夹的父级路径
+		f.renameTo(new File("D:\\Documents\\Java\\notes\\testFile\\tt1.txt"));//给文件或者文件夹重命名
+		
+//		File f4 = new File("D:\\Documents\\Java\\notes\\testFile\\tt1.txt");//true
+		File f4 = new File("D:\\Documents\\Java\\notes\\testFile\\tt21.txt");//false
+		System.out.println(f4.exists());
+	}
+}

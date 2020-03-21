@@ -1,0 +1,21 @@
+package day09;
+
+public class Test4 {
+
+}
+
+class A{
+	
+}
+
+class B{
+	public void testB() {
+		
+	}
+}
+
+class C{
+	public void testC() {
+		
+	}
+}

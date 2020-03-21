@@ -1,0 +1,45 @@
+package day09;
+
+public class Test4 {
+
+}
+/**
+ * 现在类A想同时获得类B和类C的方法并且重写，不能同时继承B，C两个类
+ * @author Administrator
+ *
+ */
+class A{
+	public void testB() {
+		new InnerB().testB();
+	}
+	
+	public void testC() {
+		new InnerC().testC();
+	}
+	
+	private class InnerB extends B{
+		@Override
+		public void testB() {
+			System.out.println("rewrites testB()");
+		}
+	}
+	
+	private class InnerC extends C{
+		@Override
+		public void testC() {
+			System.out.println("rewrites testC()");
+		}
+	}
+}
+
+class B{
+	public void testB() {
+		
+	}
+}
+
+class C{
+	public void testC() {
+		
+	}
+}

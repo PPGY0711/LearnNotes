@@ -1,0 +1,8 @@
+
+public class Person1 {
+	public String name;
+	private int age;
+	public void showAge() {
+		System.out.println(age);
+	}
+}

@@ -1,0 +1,28 @@
+package day10;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Test5 {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		list.add("b");//索引下标0
+		list.add("d");//索引下标1
+		list.add("a");//索引下标2
+		list.add("c");//索引下标3
+		list.add("d");//允许重复
+		System.out.println(list);//[b, d, a, c, d]
+		System.out.println(list.get(2));//a 通过索引访问元素
+		
+		list.add(1,"f");//指定索引下标位置插入数据
+		System.out.println(list);//[b, f, d, a, c, d]
+		
+		List<String> l = new ArrayList<String>();
+		l.add("123");
+		l.add("456");
+		list.addAll(2,l);//在指定索引下标位置插入集合
+		System.out.println(list);
+		System.out.println(list.indexOf("d"));//获取指定元素第一次出现的索引下标
+		System.out.println(list.lastIndexOf("d"));//获取指定元素最后一次出现的索引下标
+	}
+}

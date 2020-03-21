@@ -1,0 +1,8 @@
+package day08;
+
+public class Chinese {
+	static String country;
+	String name;
+	int age;
+	
+}

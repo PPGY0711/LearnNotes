@@ -1,0 +1,15 @@
+package day10;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Test5 {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		list.add("b");//Ë÷ÒıÏÂ±ê0
+		list.add("d");
+		list.add("c");
+		list.add("a");
+		System.out.println(list);//[b, d, c, a]
+	}
+}

@@ -1,0 +1,21 @@
+package day11;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test2 {
+	public static void main(String[] args) {
+		Dd d = new Dd();
+		List<String> l1 = new ArrayList<String>();
+		d.test(l1);
+		List<Integer> l2 = new ArrayList<Integer>();
+		d.test(l2);
+	}
+}
+
+class Dd{
+	public void test(List<?> list) {
+		//test方法需要一个list集合的参数，不确定list集合到底是存的数的类型是什么
+		
+	}
+}

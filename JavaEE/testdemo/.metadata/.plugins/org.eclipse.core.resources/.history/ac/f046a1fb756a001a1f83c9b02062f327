@@ -1,0 +1,33 @@
+
+public class Test1 {
+	public static void main(String[] args) {
+		//实例化Person类，也就是创建Person对象
+//		int i = 0;
+//		String s= "";
+//		Person person = new Person();//声明一个Person类型的变量，名为person，实例化Person类并且给person赋值，赋值就是当前的实例
+//		//new Person()就是实例化Person类
+//		person.name = "张三";//给person的name属性赋值
+//		person.showName();//对象的方法调用
+//		int i = person.getAge();//有返回值的方法在调用之后就有一个值，就是方法中return的部分，可用变量接收
+//		System.out.println(i);
+//		
+//		person.age = 11;
+//		int a = person.getAge();
+//		System.out.println(a);
+//		Animal ani = new Animal();
+//		ani.eat("老鼠");
+//		ani.move("飞");
+//		//对于对象的使用无外乎两个地方：1.操作类的变量；2.调用类的方法
+//		Person1 p = new Person1();
+//		//p.age = 1;//访问不了Person1类中age
+		Student stu = new Student();
+		stu.name = "小明";
+		stu.age = 12;
+		stu.course = "语文/数学/英语";
+		stu.interest = "打球/街舞/唱歌";
+		stu.showInfo();
+	}
+	public int getArea(int x, int y) {
+		return x*y;
+	}
+}

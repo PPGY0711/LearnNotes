@@ -1,0 +1,17 @@
+package day10;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Test5 {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		list.add("b");//索引下标0
+		list.add("d");//索引下标1
+		list.add("a");//索引下标2
+		list.add("c");//索引下标3
+		list.add("d");
+		System.out.println(list);//[b, d, a, c]
+		System.out.println(list.get(2));//a 通过索引访问元素
+	}
+}

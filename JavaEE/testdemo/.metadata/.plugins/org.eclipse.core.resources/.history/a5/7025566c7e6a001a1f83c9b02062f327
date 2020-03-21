@@ -1,0 +1,13 @@
+
+public class Test2 {
+    public static void swap(DataSwap ds1){
+        ds1.a = 6;
+        System.out.println("swap方法里，ds1.a的值是：" + ds1.a);
+    }
+    
+    public static void main(String[] args){
+        DataSwap ds = new DataSwap();
+        swap(ds);
+        System.out.println("main方法里，变量ds.a的值是：" + ds.a);
+    }
+}

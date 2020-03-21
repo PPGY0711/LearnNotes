@@ -1,0 +1,13 @@
+package day07;
+
+public class Person {
+	private String name;
+	private int sex;
+	private int age;
+	
+	public void showInfo() {
+		System.out.println(this.name);
+		System.out.println(this.sex);
+		System.out.println(this.age);
+	}
+}

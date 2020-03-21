@@ -1,0 +1,20 @@
+package day08;
+
+public class Chinese {
+	static String country;
+	String name;
+	int age;
+	public static void main(String[] args) {
+		Chinese.country = "China";
+		Chinese c = new Chinese();
+		c.name = "zhangsan";
+		c.age = 11;
+		Chinese c1 = new Chinese();
+		c1.name = "lisi";
+		c1.age = 12;
+		System.out.println(c.country);
+		System.out.println(c1.country);
+		System.out.println(Chinese.country);
+		System.out.println(Chinese.class);
+	}
+}

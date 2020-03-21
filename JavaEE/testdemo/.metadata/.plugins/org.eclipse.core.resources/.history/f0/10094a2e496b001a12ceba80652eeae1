@@ -1,0 +1,55 @@
+package day11;
+
+public class Test1 {
+	public static void main(String[] args) {
+		B1<Object> b1 = new B1<Object>();
+		B1<String> b12 = new B1<String>();
+		
+		B2 b2 = new B2();
+//		B2<String> b22 = new B2<String>();
+		
+	}
+}
+
+interface IB<T>{
+	T test(T t);
+}
+
+/**
+ * 未传入泛型实参时，与泛型类的定义相同，在声明类的时候，需将泛型的声明也一起加到类中
+ * @author Administrator
+ *
+ * @param <T>
+ */
+class B1<T> implements IB<T>{
+	@Override
+	public T test(T t) {
+		return t;
+	}
+}
+
+/**
+ * 如果实现接口时指定接口的泛型的具体数据类型
+ * 这个类实现接口所有方法的位置都要泛型替换实际的具体数据类型
+ * @author Administrator
+ *
+ */
+class B2 implements IB<String>{
+	@Override
+	public String test(String t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	//T全部改成了String
+}
+
+class Cc{
+	public <T> void test(T s) {
+		T t = s;
+	}
+	
+	//定义泛型用<T>
+	public <T> T test1(T s) {
+		return s;
+	}
+}

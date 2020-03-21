@@ -1,0 +1,10 @@
+package day09;
+
+/**
+ * 汽车生产工厂接口
+ * @author Administrator
+ *
+ */
+public interface BWMFactory {
+	BWM productBWM();
+}

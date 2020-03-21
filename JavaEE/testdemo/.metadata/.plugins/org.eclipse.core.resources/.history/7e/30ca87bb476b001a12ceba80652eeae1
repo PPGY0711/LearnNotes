@@ -1,0 +1,11 @@
+package day11;
+
+public class Test1 {
+	public static void main(String[] args) {
+		
+	}
+}
+
+interface IB<T>{
+	T test(T t);
+}

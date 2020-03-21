@@ -1,0 +1,23 @@
+package day09;
+
+public class SCTeacher extends Person1 implements Cook,Singer{
+
+	@Override
+	public void singing() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fry() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void showInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

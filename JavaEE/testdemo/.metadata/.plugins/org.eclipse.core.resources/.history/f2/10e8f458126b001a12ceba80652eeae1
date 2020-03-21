@@ -1,0 +1,42 @@
+package day09;
+
+public class Test {
+	public static void main(String[] args) {
+//		new Person();
+//		new Person();
+//		//匿名内部类
+//		Person p = new Person() {
+//			@Override
+//			public void test() {
+//				// TODO Auto-generated method stub
+//				super.test();
+//				//这是一个重写
+//			}
+//		};//构建了没有类名的Person子类，即匿名的Person子类
+//		//这种类没有类名，就不能用显式的new创建对象
+//		//要是还要再构造器中初始化属性就没有办法，这样的话就需要用代码块做初始化工作
+//		
+//		System.out.println(p.name);
+//		p.test();
+//		Dog d = new Dog();
+//		d.move();
+		
+//		CommonEmployee ce = new CommonEmployee();
+//		ce.work();
+//		ce.setCommonEmployeeInfo(0, "lisi", 123.33);
+//		ce.getCommonEmployeeInfo();
+//		TestTmp tt= new TestTmp();
+//		tt.getTime();
+		SCTeacher sct = new SCTeacher();
+		sct.setInfo();
+		sct.showInfo();
+		sct.fry();
+		sct.singing();
+		
+		Cook c = new SCTeacher();
+		c.fry();
+		System.out.println(c.DISH);
+		Singer s = new SCTeacher();
+		s.singing();
+	}
+}

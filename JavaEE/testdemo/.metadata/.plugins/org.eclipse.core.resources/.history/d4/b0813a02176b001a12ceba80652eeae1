@@ -1,0 +1,25 @@
+package day09;
+
+public class Test4 {
+
+}
+/**
+ * 现在类A想同时获得类B和类C的方法并且重写
+ * @author Administrator
+ *
+ */
+class A{
+	
+}
+
+class B{
+	public void testB() {
+		
+	}
+}
+
+class C{
+	public void testC() {
+		
+	}
+}

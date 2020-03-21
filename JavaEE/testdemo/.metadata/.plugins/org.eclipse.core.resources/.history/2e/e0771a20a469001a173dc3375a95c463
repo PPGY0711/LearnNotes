@@ -1,0 +1,48 @@
+
+/**
+ * @author Administrator
+ *
+ */
+public class Test {
+	public static void main(String[] args) {
+//		System.out.println("hello world!!!!");
+//		System.out.println("12345");
+		//中文注释
+//		int i = 0; //声明并初始化变量
+//		i = 1;
+//		int k = 10;
+//		i = k;
+//		short s = 9;
+//		short s0 = 11;
+//		s0 = s;
+//		System.out.println(i);
+//		System.out.println(s);
+//		
+//		byte b = 1;
+//		int m = b;//byte类型可以给int赋值
+		
+//		int i = 0;
+//		byte m = i;	//这种异常叫做编译期异常，只有在javac的时候发现,但是在集成开发环境中提示错误了。
+//		
+////		
+//		int i = 1;
+//		short s = 2;
+//		byte b = 3;
+//		 //问题，最后得到的数字6是一个什么声明类型的呢？在计算过程中i,s,b这3个变量会做数据类型的转换吗？
+//		//计算过程中，整数类型是int的范围最大，因此s,b分别先被转换成int类型，然后进行+的运算，最终的结果是int类型数据。
+//		char c = 'a';
+//		int res = c + s; //char字符作为数字进行数学运算的时候，转化为相对应的ASCII码的值再进行相应的计算。
+//		System.out.println(res);
+		
+		String str = "abc";
+		int i = 1;
+		String str0 = "1" + 1 + 2 + 3;
+		//当把任何基本类型的值和字符串值进行连接运算时（+）,基本类型的值将自动转化为字符串类型
+		String str1 = 1 + 2 + 3 + "0"; //str1="60"
+		String str2 = 3.5f + "";//str2 = "3.5"，这不失为一种将浮点数转化为字符串类型的方法
+		System.out.println(str+i);
+		System.out.println(str2);
+		
+		//注意：当有一系列的+的运算的时候，如果某个部分其中含有字符串，那么这个字符串前边挨着的+开始一直往后就是要按照字符串拼接去看
+	}
+}

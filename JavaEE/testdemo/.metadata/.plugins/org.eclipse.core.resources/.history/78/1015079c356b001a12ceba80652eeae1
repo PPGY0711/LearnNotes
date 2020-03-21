@@ -1,0 +1,20 @@
+package day10;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Test3 {
+	public static void main(String[] args) {
+		Set set = new HashSet();
+		
+		//Set添加数据
+		set.add(1);
+		set.add("a");
+		System.out.println(set);
+		
+		//Set移除数据
+		set.remove(1);
+		
+		System.out.println(set.contains("a"));
+	}
+}

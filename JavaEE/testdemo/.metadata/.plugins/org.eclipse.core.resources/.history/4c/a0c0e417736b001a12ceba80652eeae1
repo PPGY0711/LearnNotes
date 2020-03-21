@@ -1,0 +1,21 @@
+package day12;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Test1 {
+	public static void main(String[] args) throws IOException {
+		try {
+			FileInputStream in = new FileInputStream("D:\\Documents\\Java\\notes\\testFile\\tt1.txt");
+			byte[] b = new byte[100];//设置一个byte数组接收读取的文件的内容
+			in.read(b);
+			System.out.println(new String(b));
+			in.close();//注意，流在使用完毕之后一定要关闭
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

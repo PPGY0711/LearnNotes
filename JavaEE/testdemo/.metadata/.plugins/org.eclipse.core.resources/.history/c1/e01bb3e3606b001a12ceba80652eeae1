@@ -1,0 +1,33 @@
+package day11;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		new TestB().test1(); 
+		
+		//抑制编译器警告
+		@SuppressWarnings({ "unused", "rawtypes" })
+		List list = new ArrayList();
+	}
+}
+
+class TestA{
+	public void test() {
+		
+	}
+}
+
+class TestB extends TestA{
+	//@Override表示重写
+	@Override
+	public void test() {
+		// TODO Auto-generated method stub
+		super.test();
+	}
+	//被淘汰的方法
+	@Deprecated
+	public void test1();
+}

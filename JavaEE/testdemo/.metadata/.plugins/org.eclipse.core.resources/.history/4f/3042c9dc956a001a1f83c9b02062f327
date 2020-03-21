@@ -1,0 +1,13 @@
+package day07;
+
+public class Student extends Person{
+	private String school;
+	public void showInfo() {
+		
+	}
+	
+	public static void main(String[] args) {
+		Student s = new Student();
+		s.showInfo();
+	}
+}

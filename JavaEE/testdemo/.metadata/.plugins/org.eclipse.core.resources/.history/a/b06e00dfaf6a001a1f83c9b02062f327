@@ -1,0 +1,34 @@
+package day08;
+
+public class Test {
+	public void method(Person e) {
+//		System.out.println(e.getschool); //非法，编译时错误，因为Person类中没有getSchool()方法
+		if(e instanceof Student) {
+			Student me = (Student)e;
+			System.out.println(me.getSchool());
+		}
+		else
+			e.test();
+	}
+	public static void main(String[] args) {
+//		//Object是所有类的最高父类
+//		String s = "hello";
+//		Object obj = s;//可以进行
+//		System.out.println(obj);
+//		
+//		Object obj1 = "hello";
+//		String s1 = (String) obj1;
+//		System.out.println(s1);//hello
+		Test t = new Test();
+		Student m = new Person();
+		
+		t.method(m);
+		System.out.println("---------1");
+		t.method(new Person());
+		System.out.println("---------2");
+		t.method(new Student());
+		System.out.println("---------3");
+		t.method((Student)new Person());
+		
+	}
+}

@@ -1,0 +1,20 @@
+package day11;
+
+public class Test3 {
+
+}
+
+enum Season{
+	SPRING(),//要调用Season的构造方法
+	SUMMER(),
+	AUTUMN(),
+	WINTER();
+	
+	private final String name;
+	private final String desc;//描述
+	
+	private Season(String name, String desc) {
+		this.name = name;
+		this.desc = desc;
+	}
+}

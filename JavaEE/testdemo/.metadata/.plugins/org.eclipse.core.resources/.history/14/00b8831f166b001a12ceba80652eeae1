@@ -1,0 +1,22 @@
+package day09;
+
+public class Test3 {
+	int i;
+	public int z;
+	private int k;
+	class A{
+		public void setTest3Fields() {
+			Test3.this.i = 1;
+			Test3.this.k = 3;
+			Test3.this.z = 2;
+		}
+	}
+	
+	public void setInfo() {
+		new A().setTest3Fields();
+	}
+	
+	public void showInfo() {
+		System.out.println(this.i + " " + this.k + " " + this.z);
+	}
+}

@@ -1,0 +1,21 @@
+package day09;
+
+public class Test1 {
+	public static void main(String[] args) {
+//		new Person();
+//		new Person();
+		//匿名内部类
+		Person p = new Person() {
+			@Override
+			public void test() {
+				// TODO Auto-generated method stub
+				super.test();
+				//这是一个重写
+			}
+		};//构建了没有类名的Person子类，即匿名的Person子类
+		//这种类没有类名，就不能用显式的new创建对象
+		//要是还要再构造器中初始化属性就没有办法，这样的话就需要用代码块做初始化工作
+		
+		System.out.println(p.name);
+	}
+}

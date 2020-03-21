@@ -1,0 +1,10 @@
+package day09;
+
+public class Test2 {
+	//开发人员B的工作
+	public static void main(String[] args) {
+		BWM b3 = new BWMFactory3().productBWM();
+		BWM b5 = new BWMFactory5().productBWM();
+		BWM b7 = new BWMFactory7().productBWM();
+	}
+}

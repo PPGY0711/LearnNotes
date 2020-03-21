@@ -1,0 +1,12 @@
+
+public class Test1 {
+	public static void main(Stringp[ args]) {
+		//实例化Person类，也就是创建Person对象
+//		int i = 0;
+//		String s= "";
+		Person person = new Person();//声明一个Person类型的变量，名为person，实例化Person类并且给person赋值，赋值就是当前的实例
+		//new Person()就是实例化Person类
+		person.name = "张三";//给person的name属性赋值
+		
+	}
+}

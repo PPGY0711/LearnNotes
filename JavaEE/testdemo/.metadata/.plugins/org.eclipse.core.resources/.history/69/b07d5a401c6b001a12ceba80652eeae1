@@ -1,0 +1,21 @@
+package day10;
+
+public class Test1 {
+	public static void main(String[] args) {
+		B b = new B();
+		try {
+			b.test();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+class B{
+	int i;
+	public void test() throws Exception{
+		//可以使用throws在吗这排除异常，在调用方中处理
+		B b = null;
+		System.out.println(b.i);
+	}
+}

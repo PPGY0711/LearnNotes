@@ -1,0 +1,23 @@
+package day10;
+
+public class Test {
+	public static void main(String[] args) {
+//		String[] strs = new String[] {"a","b","c"};
+//		
+//		for(int i =0; i < 4;i++) {//0，1，2，3这个数组没有第四个元素
+//			//数组越界异常java.lang.ArrayIndexOutOfBoundsException
+//			System.out.println(strs[i]);
+//		}
+		A a = new A();
+		System.out.println(a.i);//正确
+		A a1 = null;
+		//在下一语句中，引用变量a1没有指向任何对象，指向null，什么都没有
+		//System.out.println(a1.i);//报错，空指针异常java.lang.NullPointerException
+		int i = 0;
+		System.out.println(1/i);//报错，除0错，java.lang.ArithmeticException
+	}
+}
+
+class A{
+	int i;
+}

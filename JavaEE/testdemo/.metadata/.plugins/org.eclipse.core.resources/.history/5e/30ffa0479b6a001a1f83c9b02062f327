@@ -1,0 +1,10 @@
+package day07;
+
+public class Kk extends Kids{
+	public void test() {
+		super.salary = 1;// 可以使用super向上追溯父类的父类，当然可以一直向上追溯，如果有那么多层级的话
+		super.yearsOld = 1;//可以使用super直接追溯父类的成员变量
+		super.employeed();//可以使用super直接追溯父类的成员方法
+		super.manOrWoman();//可以使用super向上追溯父类的成员方法，当然可以一直向上追溯，如果那么多层级的话
+	}
+}

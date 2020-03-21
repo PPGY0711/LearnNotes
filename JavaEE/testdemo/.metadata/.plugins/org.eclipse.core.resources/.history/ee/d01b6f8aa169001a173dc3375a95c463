@@ -1,0 +1,28 @@
+
+/**
+ * @author Administrator
+ *
+ */
+public class Test {
+	public static void main(String[] args) {
+//		System.out.println("hello world!!!!");
+//		System.out.println("12345");
+		//中文注释
+//		int i = 0; //声明并初始化变量
+//		i = 1;
+//		int k = 10;
+//		i = k;
+//		short s = 9;
+//		short s0 = 11;
+//		s0 = s;
+//		System.out.println(i);
+//		System.out.println(s);
+//		
+//		byte b = 1;
+//		int m = b;//byte类型可以给int赋值
+		
+		int i = 0;
+		byte m = i;	//这种异常叫做编译期异常，只有在javac的时候发现
+		System.out.println(m);
+	}
+}

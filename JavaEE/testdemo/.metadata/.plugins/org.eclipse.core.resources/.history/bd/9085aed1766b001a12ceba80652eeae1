@@ -1,0 +1,51 @@
+package day12;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+public class Test2 {
+	public static void main(String[] args) {
+		Test2.testFileReader("D:\\Documents\\Java\\notes\\testFile\\tt1.txt");
+	}
+	
+	/**
+	 * 文件字符输入流FileReader
+	 * @param inPath
+	 */
+	public static void testFileReader(String inPath) {
+		try {
+			FileReader fr = new FileReader(inPath);
+			
+			char[] c = new char[100]; //创建临时存数据的字符数组
+			
+			int len = 0;//定义一个输入流的读取长度
+			
+			while((len = fr.read(c)) != -1) {
+				System.out.println(new String(c,0,len));
+			}
+			
+			fr.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}//创建字符输入流的对象
+	}
+	
+	/**
+	 * 文件字符输出流FileWriter
+	 * @param text 输出内容
+	 * @param outPath 输出的文件
+	 */
+	public static void testFileWriter(String text, String outPath) {
+		try {
+			FileWriter fw = new FileWriter(outPath);
+			
+			fw.write(text);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

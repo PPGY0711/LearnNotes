@@ -1,0 +1,64 @@
+package day08;
+
+public class Test {
+	public void method(Person e) {
+//		System.out.println(e.getschool); //非法，编译时错误，因为Person类中没有getSchool()方法
+		if(e instanceof Student) {
+			Student me = (Student)e;
+			System.out.println(me.getSchool());
+		}
+		else
+			e.test();
+	}
+	public static void main(String[] args) {
+//		//Object是所有类的最高父类
+//		String s = "hello";
+//		Object obj = s;//可以进行
+//		System.out.println(obj);
+//		
+//		Object obj1 = "hello";
+//		String s1 = (String) obj1;
+//		System.out.println(s1);//hello
+//		Test t = new Test();
+//		Person p1 = new Person();
+//		Student s = (Student)p1;//父类-》子类，必须进行强制类型转换
+//		//以上运行时报错。
+////		t.method(m);
+//		t.method(s);
+//		
+//		System.out.println("---------1");
+//		t.method(new Person());
+//		System.out.println("---------2");
+//		t.method(new Student());
+//		System.out.println("---------3");
+//		t.method((Student)new Person());
+//		
+//		String s1 = new String("abc");
+//		String s2 = "abc";
+//		System.out.println(s1==s2);
+		
+//		Order o1 = new Order(1,"o1");
+//		Order o2 = new Order(2,"o2");
+//		System.out.println(o1.equals(o2));
+//		
+//		o2.setOrderId(o1.getOrderId());
+//		o2.setOrderName(o1.getOrderName());
+//		System.out.println(o1.equals(o2));
+//		
+//		int i1 = new Integer(112);
+//		System.out.println(i1);
+		//在Jdk1.5之后可以自动装箱拆箱
+		Integer i5 = 112;//自动装箱
+		int i6 = i5;//自动拆箱
+		int i7 = new Integer(112);//也可以
+
+		int i8 = Integer.parseInt("123");//字符串转换成整数类型
+		float f = Float.parseFloat("0.40");
+		boolean b1 = Boolean.parseBoolean("true");
+
+		String istr = String.valueOf(i8);
+		String fstr = String.valueOf(f);
+		String bstr = String.valueOf(b1);
+		System.out.println(istr+" "+fstr+" "+bstr);
+	}
+}

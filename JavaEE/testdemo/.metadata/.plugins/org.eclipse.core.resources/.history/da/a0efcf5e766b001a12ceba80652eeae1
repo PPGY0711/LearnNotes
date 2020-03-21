@@ -1,0 +1,15 @@
+package day12;
+
+public class Test2 {
+	public static void main(String[] args) {
+		
+	}
+	
+	/**
+	 * 文件字符输入流
+	 * @param inPath
+	 */
+	public static void testFileReader(String inPath) {
+		
+	}
+}

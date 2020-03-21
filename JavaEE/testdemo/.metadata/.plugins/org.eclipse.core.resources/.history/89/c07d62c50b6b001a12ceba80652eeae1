@@ -1,0 +1,9 @@
+package day09;
+
+public abstract class Employee {
+	String name;
+	int id;
+	double salary;
+	
+	public abstract void work();
+}

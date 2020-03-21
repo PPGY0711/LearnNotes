@@ -1,0 +1,9 @@
+package day11;
+
+public class Test1 {
+
+}
+
+interface IB<T>{
+	T test(T t);
+}

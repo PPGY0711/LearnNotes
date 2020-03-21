@@ -1,0 +1,10 @@
+package day09;
+
+/**
+ * 
+ * @author Administrator
+ *
+ */
+public interface BWMFactory {
+	BWM productBWM();
+}

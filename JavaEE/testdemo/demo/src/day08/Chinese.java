@@ -1,0 +1,13 @@
+package day08;
+
+public class Chinese {
+	static String country;
+	String name;
+	int age;
+	public static void test() {
+		System.out.println("This is a static method");
+	}
+	public static void main(String[] args) {
+		Chinese.test();//This is a static method
+	}
+}

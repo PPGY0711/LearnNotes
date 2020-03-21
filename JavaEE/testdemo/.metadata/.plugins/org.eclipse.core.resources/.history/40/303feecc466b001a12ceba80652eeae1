@@ -1,0 +1,26 @@
+package day11;
+
+public class Test {
+	public static void main(String[] args) {
+		A<String> a1 = new A<String>();//在new A的对象指定泛型的类型String
+		a1.setKey("xxxx");//对象使用setKey()方法中的key形参就是String类型
+		String s = a1.getKey();
+	}
+}
+
+/**
+ * 此处的泛型T可以任意取名，B,A,V...
+ * @author Administrator
+ *
+ * @param <T>
+ */
+class A<T>{
+	private T key;
+	public void setKey(T key) {
+		this.key = key;
+	}
+	
+	public T getKey() {
+		return this.key;
+	}
+}

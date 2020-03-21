@@ -1,0 +1,12 @@
+package day07;
+
+public class Cylinder extends Circle{
+	double length;
+	public Cylinder() {
+		this.length = 1;
+	}
+	public double findVolume() {
+		double area = this.findArea();
+		return area*this.length;
+	}
+}

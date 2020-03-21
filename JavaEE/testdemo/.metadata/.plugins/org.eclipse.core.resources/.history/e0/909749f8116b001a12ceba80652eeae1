@@ -1,0 +1,6 @@
+package day09;
+
+public interface Cook {
+	String dish = "Chinese food"
+	void fry();
+}

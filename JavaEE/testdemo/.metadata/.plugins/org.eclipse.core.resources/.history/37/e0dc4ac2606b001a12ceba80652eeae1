@@ -1,0 +1,24 @@
+package day11;
+
+public class Test4 {
+	
+	
+}
+
+class TestA{
+	public void test() {
+		
+	}
+}
+
+class TestB extends TestA{
+	//@Override±Ì æ÷ÿ–¥
+	@Override
+	public void test() {
+		// TODO Auto-generated method stub
+		super.test();
+	}
+	
+	@Deprecated
+	public void test1();
+}

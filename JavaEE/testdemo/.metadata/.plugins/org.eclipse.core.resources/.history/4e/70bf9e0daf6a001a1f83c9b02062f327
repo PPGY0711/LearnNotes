@@ -1,0 +1,18 @@
+package day08;
+
+public class Test {
+	public static void main(String[] args) {
+//		//Object是所有类的最高父类
+//		String s = "hello";
+//		Object obj = s;//可以进行
+//		System.out.println(obj);
+//		
+//		Object obj1 = "hello";
+//		String s1 = (String) obj1;
+//		System.out.println(s1);//hello
+		public void testMethod(Person e) {
+//			System.out.println(e.getschool); 
+		}
+		
+	}
+}

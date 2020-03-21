@@ -1,0 +1,40 @@
+package day07;
+
+public class Student extends Person{
+	private String school;
+
+	@Override
+	public void showInfo() {
+		System.out.println("Override showInfo() below");
+//		System.out.println(this.name);
+//		System.out.println(this.sex);
+//		System.out.println(this.age);
+		super.showInfo();
+		System.out.println(this.school);
+	}
+	
+	@Override
+	public void setInfo(int age, String name, int sex) {
+		// TODO Auto-generated method stub
+		super.setInfo(age, name, sex);
+		this.school = "ZJU";
+	}
+	
+	public void test() {
+		System.out.println("super class can't access this function");
+	}
+	
+	public static void main(String[] args) {
+		Student s = new Student();
+//		s.showInfo();//为空
+//		s.setInfo(1, "lisi", 0);
+//		s.showInfo();
+		
+		Person p = new Student();
+		p.setInfo(0, "zhangsan", 1);
+		p.showInfo();
+		p.test();//报错
+		s.test();//不报错
+		
+	}
+}

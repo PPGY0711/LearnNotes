@@ -1,0 +1,20 @@
+package day11;
+
+public class Test3 {
+
+}
+
+enum Season{
+	SPRING(),
+	SUMMER(),
+	AUTUMN(),
+	WINTER();
+	
+	private final String name;
+	private final String desc;//√Ë ˆ
+	
+	private Season(String name, String desc) {
+		this.name = name;
+		this.desc = desc;
+	}
+}

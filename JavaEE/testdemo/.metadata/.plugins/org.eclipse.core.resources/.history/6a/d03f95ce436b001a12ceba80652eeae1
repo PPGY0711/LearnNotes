@@ -1,0 +1,28 @@
+package day10;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Test8 {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		list.add("b");
+		list.add("cd");
+		list.add("ca");
+		list.add("a");
+		list.add("1");
+		System.out.println(list);
+		
+		Collections.reverse(list); // 反转list集合顺序
+		System.out.println(list);
+		
+		Collections.shuffle(list); // 随机排序list集合元素
+		System.out.println(list); 
+		
+		Collections.sort(list); //list集合字典升序排序
+		System.out.println(list);
+		
+		
+	}
+}

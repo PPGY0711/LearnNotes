@@ -1,0 +1,17 @@
+package day09;
+
+public class Person {
+	String name;
+	public Person() {
+		this.name = "zhangsan";
+		System.out.println("Person constructor");
+		System.out.println(this.name);
+	}
+	
+	//·Ç¾²Ì¬µÄ´úÂë¿é
+	{
+		System.out.println("nonstatic code segment executed");
+		System.out.println(this.name);
+		System.out.println("---------");
+	}
+}

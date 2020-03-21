@@ -1,0 +1,13 @@
+package day10;
+
+public class Test1 {
+
+}
+
+class B{
+	int i;
+	public void test() {
+		B b = null;
+		System.out.println(b.i);
+	}
+}

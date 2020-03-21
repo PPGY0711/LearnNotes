@@ -1,0 +1,10 @@
+
+public class Test1 {
+	public static void main(Stringp[ args]) {
+		//实例化Person类，也就是创建Person对象
+//		int i = 0;
+//		String s= "";
+		Person person = new Person();//声明一个Person类型的变量，名为person
+		
+	}
+}

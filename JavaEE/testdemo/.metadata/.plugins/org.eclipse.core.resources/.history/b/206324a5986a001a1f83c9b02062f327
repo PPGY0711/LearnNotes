@@ -1,0 +1,25 @@
+package day07;
+
+public class Student extends Person{
+	private String school;
+	/*
+	@Override
+	public void showInfo() {
+		// TODO Auto-generated method stub
+		super.showInfo();
+	}
+	使用Alt+/选中Override showInfo()出现的代码
+	*/
+	@Override
+	public void showInfo() {
+		System.out.println("Override showInfo() below");
+		System.out.println(this.name);
+		System.out.println(this.sex);
+		System.out.println(this.age);
+	}
+
+	public static void main(String[] args) {
+		Student s = new Student();
+		s.showInfo();//为空
+	}
+}

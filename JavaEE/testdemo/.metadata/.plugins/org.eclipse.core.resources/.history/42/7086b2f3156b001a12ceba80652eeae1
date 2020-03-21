@@ -1,0 +1,9 @@
+package day09;
+
+public class Test3 {
+	int i;
+	public int z;
+	private int k;
+	class A{}
+	
+}

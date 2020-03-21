@@ -1,0 +1,33 @@
+package day11;
+
+public class Test1 {
+	public static void main(String[] args) {
+		
+	}
+}
+
+interface IB<T>{
+	T test(T t);
+}
+
+/**
+ * 未传入泛型实参时，与泛型类的定义相同，在声明类的时候，需将泛型的声明也一起加到类中
+ * @author Administrator
+ *
+ * @param <T>
+ */
+class B1<T> implements IB<T>{
+	@Override
+	public T test(T t) {
+		return t;
+	}
+}
+
+class B2 implements IB<String>{
+	@Override
+	public String test(String t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	//T全部改成了String
+}

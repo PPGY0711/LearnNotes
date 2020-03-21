@@ -1,0 +1,28 @@
+package day10;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Test6 {
+	public static void main(String[] args) {
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		map.put("b", 1);//添加数据，用put
+		map.put("c", 2);
+		map.put("e", 2);
+		System.out.println(map);
+		
+		System.out.println(map.get("b"));//根据key取值
+		
+		map.remove("c");//根据Key来移除键值对
+		System.out.println(map);
+		System.out.println(map.size());//map集合长度
+		
+		//判断当前Map集合是否包含某个Key
+		System.out.println(map.containsKey("b"));
+		System.out.println(map.containsKey("a"));
+		
+		System.out.println(map.containsValue(1));
+		
+//		map.clear();//清空集合
+	}
+}

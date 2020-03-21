@@ -1,0 +1,9 @@
+package day09;
+
+public class Test {
+	public static void main(String[] args) {
+//		new Person();
+//		new Person();
+		//匿名内部类
+	}
+}

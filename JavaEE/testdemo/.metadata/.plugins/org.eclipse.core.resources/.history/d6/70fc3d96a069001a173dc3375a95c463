@@ -1,0 +1,15 @@
+
+/**
+ * @author Administrator
+ *
+ */
+public class Test {
+	public static void main(String[] args) {
+//		System.out.println("hello world!!!!");
+//		System.out.println("12345");
+		//中文注释
+		int i = 0; //声明并初始化变量
+		i = 1;
+		System.out.println(i);
+	}
+}

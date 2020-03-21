@@ -1,0 +1,14 @@
+package day08;
+
+/**
+ * 饿汉式的单例模式
+ * @author Administrator
+ *
+ */
+public class Single {
+	public Single() {
+		//假设构造中执行1000行代码，要消耗很大的资源，耗时10秒
+		//每一次new Single()需要10秒
+		//这种情况适合于单例设计模式
+	}
+}

@@ -1,0 +1,23 @@
+package day08;
+
+public class Order {
+	public int orderId;
+	public String OrderName;
+	public int getOrderId() {
+		return orderId;
+	}
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
+	public String getOrderName() {
+		return OrderName;
+	}
+	public void setOrderName(String orderName) {
+		OrderName = orderName;
+	}
+	public Order(int orderId,String OrderName) {
+		this.orderId = orderId;
+		this.OrderName = OrderName;
+	}
+	
+}
